@@ -1,10 +1,16 @@
 import React, { Component } from 'react';
+import { AppStyled } from '../styles/AppStyled';
+import Header from './Header/Header';
+import Main from './Main/Main';
 
 class App extends Component {
-  state = {  }
+  state = {};
   render() {
     return (
-      <h2></h2>
+      <AppStyled>
+        <Header />
+        <Main />
+      </AppStyled>
     );
   }
 }
