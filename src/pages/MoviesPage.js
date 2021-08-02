@@ -40,10 +40,11 @@ class MoviesPage extends Component {
 
   fetchMovies = async () => {
     const { searchQuery } = this.state;
-    this.setState({ isLoading: true });
+
     try {
+      this.setState({ isLoading: true });
       const res = await fetchSearchMovies(searchQuery);
-      return this.setState({
+      this.setState({
         moviesInfo: res,
         isLoading: false,
       });

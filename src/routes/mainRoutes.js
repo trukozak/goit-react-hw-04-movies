@@ -1,5 +1,4 @@
 import { lazy } from 'react';
-import NotFoundPage from '../pages/NotFoundPage';
 
 export const mainRoutes = [
   {
@@ -19,7 +18,7 @@ export const mainRoutes = [
     ),
   },
   {
-    name: 'movieDetails',
+    name: 'moviesPage',
     path: '/movies/:id',
     exact: false,
     component: lazy(() =>
@@ -27,9 +26,5 @@ export const mainRoutes = [
         '../pages/MovieDetailsPage' /* webpackChunkName: "MovieDetailsPage" */
       ),
     ),
-  },
-  {
-    name: 'NotFoundPage',
-    component: NotFoundPage,
   },
 ];

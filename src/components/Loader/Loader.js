@@ -5,7 +5,7 @@ export const AppLoader = () => {
   return (
     <Loader
       type="Circles"
-      color="#3f51b5"
+      color="#636571"
       height={40}
       width={40}
       timeout={5000}
