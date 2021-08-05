@@ -55,7 +55,6 @@ class MoviesPage extends Component {
 
   render() {
     const { moviesInfo, isLoading } = this.state;
-    console.log(this.state.moviesInfo);
     return (
       <>
         <Searchbar onSubmit={this.onChangeQuery} />

@@ -4,8 +4,8 @@ import { AppLoader } from '../components/Loader/Loader';
 import { NavLink, Route, Switch } from 'react-router-dom';
 import { MovieDetailsStyled } from '../styles/MovieDetailsPageStyled';
 
-const Cast = lazy(() => import('./Cast'));
-const Reviews = lazy(() => import('./Reviews'));
+const Cast = lazy(() => import('../components/Cast/Cast'));
+const Reviews = lazy(() => import('../components/Reviews/Reviews'));
 class MovieDetailsPage extends Component {
   state = {
     details: [],

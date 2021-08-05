@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
-import { AppLoader } from '../components/Loader/Loader';
-import { fetchSearchMoviesReviews } from '../services/api';
-import { ReviewsStyled } from '../styles/ReviewsStyled';
+import { AppLoader } from '../Loader/Loader';
+import { fetchSearchMoviesReviews } from '../../services/api';
+import { ReviewsStyled } from '../../styles/ReviewsStyled';
 
 class Reviews extends Component {
   state = {

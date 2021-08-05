@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
-import { AppLoader } from '../components/Loader/Loader';
-import { fetchSearchMoviesCredits } from '../services/api';
-import { CastStyled } from '../styles/CastStyled';
+import { AppLoader } from '../Loader/Loader';
+import { fetchSearchMoviesCredits } from '../../services/api';
+import { CastStyled } from '../../styles/CastStyled';
 
 class Cast extends Component {
   state = {

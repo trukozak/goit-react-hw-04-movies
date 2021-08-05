@@ -8,7 +8,7 @@ export const fetchTrendingMovies = async () => {
     const response = await axios.get(`trending/movie/week?api_key=${API_KEY}`);
     return response.data.results;
   } catch (error) {
-    throw new Error(error);
+    console.log('🚀 ~ error', error);
   }
 };
 
@@ -19,7 +19,7 @@ export const fetchSearchMovies = async query => {
     );
     return response.data.results;
   } catch (error) {
-    throw new Error(error);
+    console.log('🚀 ~ error', error);
   }
 };
 
@@ -28,7 +28,7 @@ export const fetchSearchMoviesDetails = async movieId => {
     const response = await axios.get(`movie/${movieId}?api_key=${API_KEY}`);
     return response.data;
   } catch (error) {
-    throw new Error(error);
+    console.log('🚀 ~ error', error);
   }
 };
 
@@ -39,7 +39,7 @@ export const fetchSearchMoviesCredits = async movieId => {
     );
     return response.data;
   } catch (error) {
-    throw new Error(error);
+    console.log('🚀 ~ error', error);
   }
 };
 
@@ -50,6 +50,6 @@ export const fetchSearchMoviesReviews = async movieId => {
     );
     return response.data.results;
   } catch (error) {
-    throw new Error(error);
+    console.log('🚀 ~ error', error);
   }
 };
